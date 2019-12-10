@@ -5,6 +5,10 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <listener>
+    <listener-class>me.whietship.MyListener</listener-class>
+  </listener>
+  
   <servlet>
     <servlet-name>hello</servlet-name>
     <servlet-class>me.whietship.HelloServlet</servlet-class>
