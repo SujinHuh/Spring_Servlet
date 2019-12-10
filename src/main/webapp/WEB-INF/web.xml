@@ -9,6 +9,7 @@
     <servlet-name>hello</servlet-name>
     <servlet-class>me.whietship.HelloServlet</servlet-class>
   </servlet>
+    <!--hello-->
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>/hello</url-pattern>
