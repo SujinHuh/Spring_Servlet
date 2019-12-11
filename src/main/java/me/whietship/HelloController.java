@@ -22,7 +22,7 @@ public class HelloController {
     @GetMapping("/sample")//ResponseBody를 없이 문자열만 반환받은 값
     //Model and View가 NotNull
     public String sample() {
-        return "/WEB-INF/sample.jsp";
+        return "sample";
     }
 
 }
