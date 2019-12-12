@@ -13,8 +13,8 @@ public class WebApplication implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-
-        context.register(WebConfig.class); context.setServletContext(servletContext);
+        context.setServletContext(servletContext);
+        context.register(WebConfig.class);
         context.refresh();
 
         DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
